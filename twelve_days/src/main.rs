@@ -14,5 +14,12 @@ fn main() {
     "Eleven pipers piping, ",
     "Twelve drummers drumming, "];
 
+    let mut i = 0; 
+
+    while i < 12 {
+        println!("On the {} day of christmas my true love gave to me.", i + 1);
+        println!("{} \n", song_lines[i]);
+        i+=1;
+    }
 
 }
