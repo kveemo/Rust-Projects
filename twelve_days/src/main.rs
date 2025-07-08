@@ -1,7 +1,7 @@
 fn main() {
     //just in time for christmas
     let song_lines: [&str; 12] = 
-    ["A partidge in a pear tree.",
+    ["A partidge in a pear tree. \n",
     "Two turtle-doves, and ",
     "Three French hens, ",
     "Four calling birds, ",
@@ -17,9 +17,16 @@ fn main() {
     let mut i = 0; 
 
     while i < 12 {
+        let mut j = i;
         println!("On the {} day of christmas my true love gave to me.", i + 1);
-        println!("{} \n", song_lines[i]);
+        println!("{}", song_lines[i]);
         i+=1;
+
+        while j >= 1 {
+            j = j - 1;
+            println!("{}", song_lines[j]);
+
+        }
     }
 
 }
