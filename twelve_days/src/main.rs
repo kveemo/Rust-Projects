@@ -1,6 +1,6 @@
 fn main() {
     //just in time for christmas
-    let song_lines: [String; 12] = 
+    let song_lines: [&str; 12] = 
     ["A partidge in a pear tree.",
     "Two turtle-doves, and ",
     "Three French hens, ",
